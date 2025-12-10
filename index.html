@@ -3,19 +3,24 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Dhanusheelan B Dhanush | Portfolio V4.2</title>
+
+    <title>Dhanusheelan | Developer Portfolio</title>
+
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="Official Portfolio of Dhanusheelan — Disciplined Developer, Java Learner, SQL Explorer, Mindset Builder.">
+    <meta name="keywords" content="Java Developer, SQL Developer, Portfolio, Full Stack, Mindset, Shadow Mindset">
+    <meta name="author" content="Dhanusheelan">
 
     <link rel="stylesheet" href="style.css" />
     <script defer src="script.js"></script>
 
-    <!-- FontAwesome Icons -->
-    <link rel="stylesheet"
-     href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
 
     <!-- Particles.js -->
     <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
-</head>
 
+</head>
 <body>
 
 <!-- ================= NAVBAR ================= -->
@@ -27,150 +32,182 @@
 
         <nav class="nav-links">
             <a href="#home" class="active">Home</a>
-            <a href="#about">About</a>
-            <a href="#services">Services</a>
-            <a href="#skills">Skills</a>
-            <a href="#projects">Projects</a>
-            <a href="#shadow">Shadow Mindset</a>
+            <a href="#journey">Journey</a>
+            <a href="#skills-progress">Skills</a>
+            <a href="#concept-projects">Projects</a>
+            <a href="#tools">Tools</a>
+            <a href="#shadow">Mindset</a>
+            <a href="#timeline">Education</a>
             <a href="#contact">Contact</a>
+            <a href="blog.html" target="_blank">Blog</a>
         </nav>
     </div>
 </header>
+
 
 <!-- ================= HERO SECTION ================= -->
 <section id="home" class="hero">
     <div id="particles-js"></div>
 
     <div class="hero-content reveal">
-        <h1>Hello, I'm <br><span>Dhanusheelan B Dhanush</span></h1>
+        <h1>I’m <span>Dhanusheelan</span></h1>
         <h3 class="typing"></h3>
 
-        <!-- HERO IMAGE HOLDER (empty now) -->
+        <!-- Hero Image -->
         <div class="hero-image-container">
-            <!-- If user uploads profile.png, it will appear automatically -->
             <img id="profile-img" src="profile.png" alt="Profile Image"
-                 onerror="this.style.display='none'" />
+                 onerror="this.style.display='none'">
         </div>
 
         <div class="hero-btns">
-            <a href="#projects" class="btn">View My Work</a>
+            <a href="#journey" class="btn">Start Journey</a>
             <a href="resume.pdf" class="btn-outline" download>Download Resume</a>
         </div>
     </div>
 </section>
 
-<!-- ================= ABOUT ================= -->
-<section id="about" class="about reveal">
-    <h2>About Me</h2>
-    <p>
-        A disciplined Java Full Stack Developer from Mysuru, focused on building clean applications
-        and improving myself daily through consistency, discipline, and self-mastery.
-    </p>
 
-    <button id="toggleAbout" class="btn-outline small-btn">Read More</button>
+<!-- ================= LEARNING JOURNEY ================= -->
+<section id="journey" class="journey reveal">
+    <h2>My Learning Journey</h2>
 
-    <div id="extendedAbout" class="extended hidden">
-        <p>
-            I believe in mastering myself before mastering my career. My journey includes strong
-            technical learning along with mental strength, discipline, and emotional control.
-        </p>
-
-        <p>
-            My long-term vision is to become a powerful full-stack developer and inspire others
-            through my Shadow Mindset discipline journey.
-        </p>
-
-        <button id="showLess" class="btn-outline small-btn">Show Less</button>
-    </div>
-</section>
-
-<!-- ================= SERVICES ================= -->
-<section id="services" class="services reveal">
-    <h2>Services</h2>
-
-    <div class="service-boxes">
-        <div class="service-card">
-            <i class="fa-solid fa-code"></i>
-            <h3>Full Stack Development</h3>
-            <p>Creating responsive, powerful applications using Java, SQL, HTML, CSS, and JS.</p>
+    <div class="journey-cards">
+        <div class="journey-card">
+            <h3>Java Mastery</h3>
+            <p>Building strong fundamentals in OOP, Collections, Exception Handling.</p>
+            <div class="progress"><div style="width: 70%"></div></div>
         </div>
 
-        <div class="service-card">
-            <i class="fa-solid fa-database"></i>
-            <h3>Database Design</h3>
-            <p>Optimizing database structures, queries, and performance using SQL.</p>
+        <div class="journey-card">
+            <h3>SQL & Databases</h3>
+            <p>Practicing joins, subqueries, normalization and real SQL interviews.</p>
+            <div class="progress"><div style="width: 80%"></div></div>
         </div>
 
-        <div class="service-card">
-            <i class="fa-solid fa-brain"></i>
+        <div class="journey-card">
+            <h3>Web Development</h3>
+            <p>Learning frontend basics: HTML, CSS, responsiveness & UI structure.</p>
+            <div class="progress"><div style="width: 60%"></div></div>
+        </div>
+
+        <div class="journey-card">
             <h3>Problem Solving</h3>
-            <p>Writing efficient logic and programs to solve real-world challenges.</p>
+            <p>Daily logical practice: arrays, loops, patterns and beginner DSA.</p>
+            <div class="progress"><div style="width: 65%"></div></div>
         </div>
     </div>
 </section>
 
-<!-- ================= SKILLS ================= -->
-<section id="skills" class="skills reveal">
-    <h2>Skills</h2>
 
-    <div class="skill-group">
-        <div class="skill-card">
-            <p>Java</p>
-            <div class="bar"><div class="fill" style="width: 90%"></div></div>
+<!-- ================= SKILLS IN PROGRESS ================= -->
+<section id="skills-progress" class="skills-progress reveal">
+    <h2>Skills in Progress</h2>
+
+    <div class="skill-list">
+        <div class="skill-item"><i class="fa-solid fa-caret-right"></i> OOP Concepts</div>
+        <div class="skill-item"><i class="fa-solid fa-caret-right"></i> Collections Framework</div>
+        <div class="skill-item"><i class="fa-solid fa-caret-right"></i> JDBC & Database Connectivity</div>
+        <div class="skill-item"><i class="fa-solid fa-caret-right"></i> SQL Joins & Subqueries</div>
+        <div class="skill-item"><i class="fa-solid fa-caret-right"></i> HTML/CSS Web Layouts</div>
+        <div class="skill-item"><i class="fa-solid fa-caret-right"></i> Basic JavaScript Logic</div>
+    </div>
+</section>
+
+
+<!-- ================= CONCEPT PROJECTS ================= -->
+<section id="concept-projects" class="concept-projects reveal">
+    <h2>Concept Projects</h2>
+
+    <div class="concept-cards">
+
+        <div class="concept-card">
+            <i class="fa-solid fa-file-code"></i>
+            <h3>Student Result Calculator</h3>
+            <p>Java program to compute total, average & grade using OOP methods.</p>
         </div>
 
-        <div class="skill-card">
-            <p>SQL</p>
-            <div class="bar"><div class="fill" style="width: 85%"></div></div>
+        <div class="concept-card">
+            <i class="fa-solid fa-computer"></i>
+            <h3>ATM Console Simulator</h3>
+            <p>Simple ATM system with pin validation, withdrawal & balance check.</p>
         </div>
 
-        <div class="skill-card">
-            <p>JavaScript</p>
-            <div class="bar"><div class="fill" style="width: 75%"></div></div>
+        <div class="concept-card">
+            <i class="fa-solid fa-database"></i>
+            <h3>Employee SQL Database</h3>
+            <p>Set of SQL queries for filtering, sorting & grouping employee data.</p>
         </div>
 
-        <div class="skill-card">
-            <p>HTML & CSS</p>
-            <div class="bar"><div class="fill" style="width: 80%"></div></div>
+        <div class="concept-card">
+            <i class="fa-solid fa-gears"></i>
+            <h3>Payroll Logic</h3>
+            <p>Java logic to compute salary components, bonuses & deductions.</p>
         </div>
     </div>
 </section>
 
-<!-- ================= PROJECTS ================= -->
-<section id="projects" class="projects reveal">
-    <h2>Featured Projects</h2>
 
-    <div id="github-projects" class="github-projects">
-        <p style="color: #888;">Loading projects...</p>
+<!-- ================= TOOLS ================= -->
+<section id="tools" class="tools reveal">
+    <h2>Tools I Use</h2>
+
+    <div class="tool-grid">
+
+        <div class="tool-card"><i class="fa-brands fa-java"></i> Java</div>
+        <div class="tool-card"><i class="fa-solid fa-database"></i> MySQL</div>
+        <div class="tool-card"><i class="fa-brands fa-git-alt"></i> Git</div>
+        <div class="tool-card"><i class="fa-brands fa-github"></i> GitHub</div>
+        <div class="tool-card"><i class="fa-brands fa-html5"></i> HTML5</div>
+        <div class="tool-card"><i class="fa-brands fa-css3-alt"></i> CSS3</div>
+        <div class="tool-card"><i class="fa-brands fa-js"></i> JavaScript</div>
+        <div class="tool-card"><i class="fa-solid fa-terminal"></i> Terminal</div>
+        <div class="tool-card"><i class="fa-solid fa-code"></i> VS Code</div>
     </div>
 </section>
+
 
 <!-- ================= SHADOW MINDSET ================= -->
 <section id="shadow" class="shadow reveal">
     <h2>Shadow Mindset</h2>
+
     <p class="shadow-quote">
-        “Discipline is your weapon. Silence is your power. Consistency is your identity.”
+        “Discipline is your weapon. Silence is your strategy. Consistency is your identity.”
     </p>
 
-    <a href="#" class="btn" target="_blank">Visit YouTube Channel</a>
+    <a href="blog.html" class="btn">Visit Blog</a>
 </section>
 
-<!-- ================= TESTIMONIALS ================= -->
-<section id="testimonials" class="testimonials reveal">
-    <h2>Testimonials</h2>
 
-    <div class="test-boxes">
-        <div class="test-card">
-            <p>“Focused, disciplined and hardworking. A developer with a strong mindset.”</p>
-            <h4>- Mentor Review</h4>
+<!-- ================= EDUCATION TIMELINE ================= -->
+<section id="timeline" class="timeline reveal">
+    <h2>Education Timeline</h2>
+
+    <div class="timeline-container">
+
+        <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <h3>BCA — University of Mysore</h3>
+            <span>2022 - 2025</span>
+            <p>Focused on Java, SQL, web basics and software principles.</p>
         </div>
 
-        <div class="test-card">
-            <p>“Writes clean code and learns fast. Sharp problem-solving ability.”</p>
-            <h4>- Project Guide</h4>
+        <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <h3>Java Full Stack Training</h3>
+            <span>2024 - 2025</span>
+            <p>Advanced Java, JDBC, SQL & frontend foundations.</p>
         </div>
+
+        <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <h3>Self Learning & Discipline</h3>
+            <span>Ongoing</span>
+            <p>Building a strong mindset through consistency & silence.</p>
+        </div>
+
     </div>
 </section>
+
 
 <!-- ================= CONTACT ================= -->
 <section id="contact" class="contact reveal">
@@ -180,8 +217,6 @@
         <a href="mailto:dhanusheelan@gmail.com"><i class="fa-solid fa-envelope"></i></a>
         <a href="https://www.linkedin.com/in/dhanusheelan-b-11b33b288" target="_blank">
             <i class="fa-brands fa-linkedin"></i></a>
-        <a href="https://www.instagram.com/heart_haker__ds" target="_blank">
-            <i class="fa-brands fa-instagram"></i></a>
         <a href="https://github.com/dhanusheelan-bit" target="_blank">
             <i class="fa-brands fa-github"></i></a>
     </div>
@@ -190,14 +225,17 @@
         <input type="text" placeholder="Your Name" required />
         <input type="email" placeholder="Your Email" required />
         <textarea placeholder="Message" rows="5" required></textarea>
-        <button class="btn" type="submit">Send</button>
+        <button class="btn" type="submit">Send Message</button>
     </form>
 </section>
 
+
 <!-- ================= FOOTER ================= -->
 <footer>
-    <p>© 2025 Dhanusheelan B Dhanush |
-        <a href="https://github.com/dhanusheelan-bit" target="_blank" class="footer-github">GitHub</a>
+    <p>© 2025 Dhanusheelan |
+        <a href="https://github.com/dhanusheelan-bit" target="_blank" class="footer-github">
+            GitHub
+        </a>
     </p>
 </footer>
 
