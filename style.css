@@ -380,3 +380,85 @@ footer {
         height: 120px;
     }
 }
+/* =============== BLOG PAGE =============== */
+.blog-body {
+    background: #000;
+    color: #fff;
+}
+
+.blog-header {
+    text-align: center;
+    padding: 50px 10%;
+}
+
+.blog-header h1 {
+    color: #ff0000;
+    text-shadow: 0 0 10px red;
+    margin-bottom: 5px;
+}
+
+.blog-sub {
+    color: #ccc;
+}
+
+.back-btn {
+    color: #ff0000;
+    font-size: 18px;
+    text-decoration: none;
+}
+
+.blog-container {
+    max-width: 900px;
+    margin: auto;
+    padding: 20px;
+}
+
+.blog-card {
+    background: #0d0d0d;
+    padding: 25px;
+    margin: 20px 0;
+    border-left: 4px solid #ff0000;
+    border-radius: 10px;
+    transition: 0.3s;
+}
+
+.blog-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 0 15px red;
+}
+
+.blog-card .date {
+    color: #ff4d4d;
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+.blog-list li {
+    margin: 8px 0;
+}
+/* =============== 404 PAGE =============== */
+.error-page {
+    background: #000;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.error-container h1 {
+    font-size: 120px;
+    color: #ff0000;
+    text-shadow: 0 0 20px red;
+}
+
+.error-container p {
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.error-container .btn {
+    padding: 10px 20px;
+}
+
+
