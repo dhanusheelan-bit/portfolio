@@ -19,8 +19,8 @@ header {
     background: rgba(10, 10, 10, 0.85);
     position: fixed;
     top: 0;
-    backdrop-filter: blur(8px);
     border-bottom: 1px solid #222;
+    backdrop-filter: blur(8px);
     z-index: 1000;
 }
 
@@ -35,6 +35,7 @@ header {
 .logo {
     font-size: 28px;
     font-weight: 700;
+    letter-spacing: 1px;
 }
 .logo span {
     color: #ff0000;
@@ -66,22 +67,22 @@ header {
     cursor: pointer;
 }
 
+
 /* ================= HERO ================= */
 .hero {
     height: 100vh;
-    position: relative;
-    overflow: hidden;
     display: flex;
-    justify-content: center;
+    position: relative;
     align-items: center;
-    padding: 120px 10% 0 10%;
+    justify-content: center;
     text-align: center;
+    padding: 140px 10% 0 10%;
 }
 
 #particles-js {
     position: absolute;
-    width: 100%;
     height: 100%;
+    width: 100%;
     z-index: -1;
 }
 
@@ -94,13 +95,13 @@ header {
     color: #ff0000;
     font-size: 22px;
     margin-top: 10px;
-    height: 30px;
-    text-shadow: 0 0 15px red;
+    height: 35px;
+    text-shadow: 0 0 12px red;
 }
 
-/* HERO IMAGE CONTAINER */
+/* Hero Image */
 .hero-image-container {
-    margin-top: 20px;
+    margin: 20px 0;
 }
 
 .hero-image-container img {
@@ -110,170 +111,135 @@ header {
     border-radius: 50%;
     border: 3px solid #ff0000;
     box-shadow: 0 0 20px red;
-    display: block;
-    margin: 10px auto;
 }
 
-/* ================= BUTTONS ================= */
-.btn, .btn-outline {
-    padding: 12px 24px;
-    display: inline-block;
-    border-radius: 6px;
-    margin: 10px;
-    text-decoration: none;
-    font-weight: 600;
-    letter-spacing: 1px;
-    transition: 0.3s;
-}
-
-.btn {
-    background: #ff0000;
-    color: #000;
-    box-shadow: 0 0 15px #ff0000;
-}
-
-.btn:hover {
-    transform: scale(1.05);
-}
-
-.btn-outline {
-    border: 2px solid #ff0000;
-    color: #ff0000;
-}
-
-.btn-outline:hover {
-    background: #ff0000;
-    color: black;
-    box-shadow: 0 0 15px red;
-}
-
-.small-btn {
-    padding: 8px 18px;
-    font-size: 14px;
-}
 
 /* ================= SECTIONS ================= */
 section {
-    padding: 90px 10%;
+    padding: 100px 10%;
     text-align: center;
 }
 
 h2 {
     font-size: 32px;
-    color: #ff0000;
     margin-bottom: 25px;
+    color: #ff0000;
     text-shadow: 0 0 10px red;
 }
 
-/* ================= ABOUT EXTENDED ================= */
-.extended {
-    margin-top: 20px;
-    background: #0d0d0d;
-    padding: 20px;
-    border-radius: 8px;
-    border-left: 4px solid #ff0000;
-    line-height: 1.6;
-    max-height: 0;
-    overflow: hidden;
-    opacity: 0;
-    transition: 0.5s ease;
-}
-
-.extended.visible {
-    max-height: 500px;
-    opacity: 1;
-}
-
-/* ================= SERVICES ================= */
-.services .service-boxes {
+/* ================= JOURNEY ================= */
+.journey-cards {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 25px;
 }
 
-.service-card {
+.journey-card {
+    background: #0d0d0d;
+    padding: 25px;
+    border-radius: 10px;
+    border-left: 4px solid #ff0000;
+    text-align: left;
+    transition: 0.3s;
+}
+
+.journey-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 0 15px red;
+}
+
+.progress {
+    width: 100%;
+    background: #222;
+    height: 10px;
+    border-radius: 6px;
+    margin-top: 12px;
+}
+
+.progress div {
+    height: 10px;
+    background: linear-gradient(90deg, #500000, #ff0000);
+    border-radius: 6px;
+    box-shadow: 0 0 10px red;
+}
+
+
+/* ================= SKILLS IN PROGRESS ================= */
+.skill-list {
+    max-width: 700px;
+    margin: auto;
+    text-align: left;
+}
+
+.skill-item {
+    margin: 12px 0;
+    font-size: 18px;
+}
+
+.skill-item i {
+    color: #ff0000;
+    margin-right: 8px;
+}
+
+
+/* ================= CONCEPT PROJECTS ================= */
+.concept-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 25px;
+}
+
+.concept-card {
     background: #0d0d0d;
     padding: 25px;
     border-radius: 10px;
     border-left: 4px solid #ff0000;
     transition: 0.3s;
-    text-align: center;
 }
 
-.service-card:hover {
-    transform: translateY(-7px);
-    box-shadow: 0 0 15px red;
-}
-
-.service-card i {
-    font-size: 35px;
-    margin-bottom: 15px;
-    color: #ff0000;
-}
-
-/* ================= SKILLS ================= */
-.skill-group {
-    max-width: 700px;
-    margin: auto;
-}
-
-.skill-card {
-    margin: 20px 0;
-}
-
-.skill-card p {
-    font-size: 18px;
-    margin-bottom: 6px;
-}
-
-.bar {
-    width: 100%;
-    height: 12px;
-    background: #111;
-    border-radius: 8px;
-    overflow: hidden;
-}
-
-.fill {
-    height: 100%;
-    background: linear-gradient(90deg, #500000, #ff0000);
-    box-shadow: 0 0 10px red;
-}
-
-/* ================= PROJECTS ================= */
-.github-projects {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-    gap: 20px;
-}
-
-.repo-card {
-    background: #0d0d0d;
-    padding: 20px;
-    border-left: 4px solid #ff0000;
-    border-radius: 8px;
-    transition: 0.3s;
-}
-
-.repo-card:hover {
+.concept-card:hover {
     transform: translateY(-5px);
     box-shadow: 0 0 15px red;
 }
 
-.repo-card h4 {
-    font-size: 20px;
+.concept-card i {
+    font-size: 32px;
+    margin-bottom: 12px;
     color: #ff0000;
-    margin-bottom: 8px;
 }
 
-.repo-card p {
-    color: #ccc;
-    font-size: 14px;
+
+/* ================= TOOLS ================= */
+.tool-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(130px, 1fr));
+    gap: 20px;
 }
+
+.tool-card {
+    background: #0d0d0d;
+    padding: 18px;
+    border-radius: 10px;
+    border: 1px solid #222;
+    text-align: center;
+    transition: 0.3s;
+}
+
+.tool-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 0 15px red;
+}
+
+.tool-card i {
+    font-size: 26px;
+    margin-bottom: 8px;
+    color: #ff0000;
+}
+
 
 /* ================= SHADOW MINDSET ================= */
 .shadow-quote {
-    font-size: 18px;
+    font-size: 20px;
     max-width: 700px;
     margin: auto;
     margin-bottom: 25px;
@@ -281,26 +247,40 @@ h2 {
     text-shadow: 0 0 10px red;
 }
 
-/* ================= TESTIMONIALS ================= */
-.test-boxes {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-    gap: 25px;
+
+/* ================= TIMELINE ================= */
+.timeline-container {
+    position: relative;
+    margin: auto;
+    max-width: 900px;
 }
 
-.test-card {
-    background: #0d0d0d;
-    padding: 25px;
-    border-radius: 10px;
+.timeline-item {
     border-left: 4px solid #ff0000;
-    box-shadow: 0 0 10px #220000;
-    transition: 0.3s;
+    padding: 20px 25px;
+    background: #0d0d0d;
+    border-radius: 8px;
+    margin: 25px 0;
+    position: relative;
 }
 
-.test-card:hover {
-    transform: translateY(-7px);
-    box-shadow: 0 0 15px red;
+.timeline-dot {
+    height: 16px;
+    width: 16px;
+    background: #ff0000;
+    border-radius: 50%;
+    position: absolute;
+    top: 20px;
+    left: -10px;
+    box-shadow: 0 0 12px red;
 }
+
+.timeline-item span {
+    color: #ff4d4d;
+    display: block;
+    margin-bottom: 8px;
+}
+
 
 /* ================= CONTACT ================= */
 .social-icons {
@@ -335,6 +315,7 @@ form textarea:focus {
     box-shadow: 0 0 12px red;
 }
 
+
 /* ================= FOOTER ================= */
 footer {
     padding: 20px;
@@ -352,6 +333,7 @@ footer {
     text-shadow: 0 0 12px red;
 }
 
+
 /* ================= REVEAL ANIMATION ================= */
 .reveal {
     opacity: 0;
@@ -364,14 +346,15 @@ footer {
     transform: translateY(0);
 }
 
+
 /* ================= RESPONSIVE ================= */
 @media (max-width: 768px) {
 
     .nav-links {
         display: none;
         flex-direction: column;
-        background: #111;
         width: 100%;
+        background: #111;
         position: absolute;
         top: 70px;
         left: 0;
