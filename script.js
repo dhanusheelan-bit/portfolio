@@ -124,3 +124,14 @@ document.body.classList.add("page-loaded");
 window.addEventListener("load", () => {
     document.body.classList.add("fade-in");
 });
+/* ================= PARALLAX SCROLL EFFECT ================= */
+
+window.addEventListener("scroll", () => {
+    const scrolled = window.pageYOffset;
+
+    const hero = document.querySelector(".hero");
+    if (hero) {
+        hero.style.backgroundPositionY = scrolled * 0.3 + "px";
+    }
+});
+
