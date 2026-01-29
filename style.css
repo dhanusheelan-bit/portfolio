@@ -446,3 +446,34 @@ form textarea:focus {
         height: 120px;
     }
 }
+/* ================= PARALLAX EFFECT ================= */
+
+/* Parallax background sections */
+.parallax {
+    position: relative;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+}
+
+/* Hero parallax depth */
+.hero {
+    perspective: 1px;
+    transform-style: preserve-3d;
+    overflow-x: hidden;
+}
+
+.hero-content {
+    transform: translateZ(-0.5px) scale(1.2);
+}
+
+/* Disable parallax on mobile (important) */
+@media (max-width: 768px) {
+    .parallax {
+        background-attachment: scroll;
+    }
+
+    .hero-content {
+        transform: none;
+    }
+}
